@@ -1,0 +1,36 @@
+<template name="crudTable">
+    <h2>EDIT</h2>
+
+    <table class="ui compact celled definition table">
+
+        <thead>
+            <tr>
+                <th>Active</th>
+                <th>Question</th>
+                <th>Punchline</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each joke in jokes}}
+                <tr>
+                    <td class="collapsing">
+                        <div class="ui fitted slider checkbox">
+                            <input type="checkbox"> <label></label>
+                        </div>
+                    </td>
+                    <td>{{joke.question}}</td>
+                    <td>{{joke.punchline}}</td>
+                    <td>
+                        <button data-id="{{joke._id}}" class="ui icon delete button">
+                            <i class="trash icon"></i>
+                        </button>
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody>
+
+    </table>
+
+</template>
