@@ -1,0 +1,15 @@
+.ui.cards > .card, .ui.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 320px;
+
+    font-size: 3em;
+    line-height: 1.4;
+
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}

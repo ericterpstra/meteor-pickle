@@ -1,5 +1,5 @@
 Template.crud.onCreated(function() {
     
-    this.subscribe('jokes', true);
+    this.subscribe('jokes', false);
     
 });

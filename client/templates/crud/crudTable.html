@@ -1,5 +1,5 @@
 <template name="crudTable">
-    <h2>EDIT</h2>
+    <h2>JOKES</h2>
 
     <table class="ui compact celled definition table">
 
@@ -17,7 +17,11 @@
                 <tr>
                     <td class="collapsing">
                         <div class="ui fitted slider checkbox">
-                            <input type="checkbox"> <label></label>
+                            <input type="checkbox"
+                                   class="active"
+                                   data-id="{{joke._id}}"
+                                   checked="{{joke.active}}">
+                            <label></label>
                         </div>
                     </td>
                     <td>{{joke.question}}</td>

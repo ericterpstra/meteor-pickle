@@ -1,3 +1,22 @@
 <template name="joke">
-    <h2>Joke</h2>
+
+
+    {{#with joke}}
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="ui card front">
+                    <div class="content">
+                        <div>{{question}}</div>
+                    </div>
+                </div>
+                <div class="ui card back">
+                    <div class="content">
+                        <div>{{punchline}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {{/with}}
+
 </template>
